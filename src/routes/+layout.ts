@@ -6,3 +6,4 @@ inject({ mode: dev ? "development" : "production" });
 injectSpeedInsights();
 
 export const prerender = true;
+export const config = { runtime: "edge" };
