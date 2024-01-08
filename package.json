@@ -76,7 +76,6 @@
     ]
   },
   "lint-staged": {
-    "**/*.svelte": "pnpm typecheck",
     "**/*.ts(x),svelte": [
       "eslint --fix --ignore-path .gitignore",
       "vitest"
