@@ -7,7 +7,7 @@
 
   let navOpened = $state(false);
   let mode = $state<Mode>("system");
-  let activeHash = $derived($page.url.hash || "#section-hero");
+  let activeHash = $state($page.url.hash || "#section-hero");
   let headerRef = $state<HTMLHeadElement | undefined>(undefined);
 
   const toggleMode = () => {
@@ -19,9 +19,20 @@
   };
 
   $effect(() => {
+    const sections = document.querySelectorAll("section");
+
     const trackScroll = () => {
       if (!headerRef) return;
       headerRef.classList.toggle("md:border-0", window.scrollY <= 50);
+
+      sections.forEach((section) => {
+        const offsetTop = section.offsetTop;
+        const offsetBottom = offsetTop + section.offsetHeight;
+
+        if (window.scrollY + 100 >= offsetTop && window.scrollY < offsetBottom) {
+          if (section.id) activeHash = `#${section.id}`;
+        }
+      });
     };
 
     trackScroll();
@@ -36,7 +47,7 @@
   bind:this={headerRef}
   class="
     sticky top-0 z-40 w-full
-    py-3 px-4 md:py-4 md:px-6 mx-auto bg-background/95 select-none
+    py-6 px-4 md:py-4 mx-auto bg-background/95 select-none
     flex-none transition-all border-b ease-in-out md:shadow-none"
   class:shadow-sm={navOpened}
   use:clickOutside={() => {
@@ -53,7 +64,7 @@
           navOpened = !navOpened;
         }}
         class="md:hidden px-3 py-1 hover:bg-muted inline-flex items-center justify-center rounded-md">
-        <div class="icon-[heroicons--bars-3] h-6 w-6" />
+        <div class="icon-[heroicons--bars-3] h-8 w-8" />
       </button>
     </div>
 

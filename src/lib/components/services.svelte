@@ -4,7 +4,7 @@
   import Section from "./section.svelte";
 </script>
 
-<Section id="services" class="bg-muted" containerClass="max-w-7xl mx-auto">
+<Section id="services" class="bg-muted flex" containerClass="max-w-7xl mx-auto">
   <Headline title="What services do we offer?" tagline="Services" />
 
   <ItemGrid
