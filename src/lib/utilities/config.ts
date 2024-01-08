@@ -2,7 +2,7 @@ import type { Price } from "$lib/types";
 
 export const siteConfig = {
   title: "OnBlockIt",
-  description: "Your LinkedIn Growth"
+  description: "Your LinkedIn Growth..."
 };
 
 export const prices: Array<Price> = [
