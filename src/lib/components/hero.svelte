@@ -51,7 +51,9 @@
       </div>
 
       <div class="max-w-3xl mx-auto">
-        <img alt="hero" src="https://astrowind.vercel.app/_astro/hero.9Pvf-M2C_ZkzMoI.webp" />
+        <enhanced:img
+          src="$lib/assets/images/hero-astronaut.webp"
+          alt="an astronaut floating in the space" />
       </div>
     </div>
   </div>

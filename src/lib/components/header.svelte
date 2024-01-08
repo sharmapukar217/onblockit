@@ -60,9 +60,8 @@
       </a>
 
       <button
-        onclick={() => {
-          navOpened = !navOpened;
-        }}
+        aria-label="Toggle navbar"
+        onclick={() => (navOpened = !navOpened)}
         class="
         px-3 py-1 text-muted-foreground hover:text-foreground
         inline-flex md:hidden items-center justify-center rounded-md">
@@ -94,7 +93,10 @@
       </nav>
 
       <div class="inline-flex items-center mt-2 md:mt-0">
-        <button class="inline-flex items-center justify-center ml-2 mr-4 py-2" onclick={toggleMode}>
+        <button
+          aria-label="Toggle theme mode"
+          class="inline-flex items-center justify-center ml-2 mr-4 py-2"
+          onclick={toggleMode}>
           {#if mode === "light"}
             <div class="icon-[heroicons--sun] h-6 w-6 pointer-events-none" />
           {:else if mode === "dark"}
