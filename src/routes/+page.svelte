@@ -3,6 +3,7 @@
 
   // components
   import Header from "$lib/components/header.svelte";
+  import Footer from "$lib/components/footer.svelte";
 
   // sections
   import Hero from "$lib/components/hero.svelte";
@@ -67,3 +68,5 @@
 
 <!-- FAQs -->
 <Faq />
+
+<Footer />
