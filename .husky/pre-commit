@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# lint code
+npx lint-staged
+
+# create .env.example
+if [ -e ".env" ]; then
+    sed 's/=.*/=/' .env > .env.example && git add .env.example
+fi
