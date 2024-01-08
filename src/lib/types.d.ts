@@ -13,3 +13,15 @@ export interface ItemGrid {
   defaultIcon?: string;
   classes?: Record<string, string>;
 }
+
+export interface Price {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  price?: number;
+  period?: string;
+  items?: Array<Item>;
+  callToAction?: CallToAction;
+  hasRibbon?: boolean;
+  ribbonTitle?: string;
+}
