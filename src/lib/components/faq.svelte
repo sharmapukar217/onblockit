@@ -5,7 +5,7 @@
   import { siteConfig } from "$lib/utilities/config";
 </script>
 
-<Section id="faq" class="bg-muted">
+<Section id="faq" class="bg-muted/60">
   <Headline title="Frequently Asked Questions" tagline="FAQ" />
 
   <ItemGrid
