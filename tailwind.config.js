@@ -46,9 +46,9 @@ export default {
         sm: "calc(var(--border-radius) - 4px)"
       }),
       fontFamily: () => ({
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-        serif: ["var(--font-serif)", ...fontFamily.serif],
-        heading: ["var(--font-heading)", ...fontFamily.sans]
+        sans: ["var(--font-sans,'')", ...fontFamily.sans]
+        // serif: ["var(--font-serif)", ...fontFamily.serif],
+        // heading: ["var(--font-heading)", ...fontFamily.sans]
       })
     }
   },
