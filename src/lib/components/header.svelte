@@ -3,8 +3,19 @@
   import { siteConfig } from "$lib/utilities/config";
   import { clickOutside } from "$lib/utilities/actions";
 
+  type Mode = "light" | "dark" | "system";
+
   let navOpened = $state(false);
+  let mode = $state<Mode>("system");
   let activeHash = $derived($page.url.hash || "#section-hero");
+
+  const toggleMode = () => {
+    const sequence: Array<Mode> = ["light", "dark", "system"];
+    mode = sequence[sequence.indexOf(mode) + 1] ?? "light";
+
+    // update dom
+    document.documentElement.setAttribute("data-mode", mode);
+  };
 </script>
 
 <header
@@ -51,8 +62,14 @@
       </nav>
 
       <div class="inline-flex items-center mt-2 md:mt-0">
-        <button class="inline-flex items-center justify-center ml-2 mr-4 py-2">
-          <div class="icon-[heroicons--moon] h-6 w-6" />
+        <button class="inline-flex items-center justify-center ml-2 mr-4 py-2" onclick={toggleMode}>
+          {#if mode === "light"}
+            <div class="icon-[heroicons--sun] h-6 w-6" />
+          {:else if mode === "dark"}
+            <div class="icon-[heroicons--moon] h-6 w-6" />
+          {:else}
+            <div class="icon-[heroicons--computer-desktop] h-6 w-6" />
+          {/if}
         </button>
         <a href="/" aria-label="RSS Feed" class="inline-flex items-center justify-center">
           <div class="icon-[heroicons--rss] h-6 w-6" />
