@@ -6,7 +6,7 @@
   type Mode = "light" | "dark" | "system";
 
   let navOpened = $state(false);
-  let mode = $state<Mode>("system");
+  let mode = $state<Mode>("dark");
   let activeHash = $state($page.url.hash || "#section-hero");
   let headerRef = $state<HTMLHeadElement | undefined>(undefined);
 
@@ -63,8 +63,14 @@
         onclick={() => {
           navOpened = !navOpened;
         }}
-        class="md:hidden px-3 py-1 hover:bg-muted inline-flex items-center justify-center rounded-md">
-        <div class="icon-[heroicons--bars-3] h-8 w-8" />
+        class="
+        px-3 py-1 text-muted-foreground hover:text-foreground
+        inline-flex md:hidden items-center justify-center rounded-md">
+        {#if navOpened}
+          <div class="icon-[heroicons--x-mark] pointer-events-none h-8 w-8" />
+        {:else}
+          <div class="icon-[heroicons--bars-3] pointer-events-none h-8 w-8" />
+        {/if}
       </button>
     </div>
 
@@ -90,11 +96,11 @@
       <div class="inline-flex items-center mt-2 md:mt-0">
         <button class="inline-flex items-center justify-center ml-2 mr-4 py-2" onclick={toggleMode}>
           {#if mode === "light"}
-            <div class="icon-[heroicons--sun] h-6 w-6" />
+            <div class="icon-[heroicons--sun] h-6 w-6 pointer-events-none" />
           {:else if mode === "dark"}
-            <div class="icon-[heroicons--moon] h-6 w-6" />
+            <div class="icon-[heroicons--moon] h-6 w-6 pointer-events-none" />
           {:else}
-            <div class="icon-[heroicons--computer-desktop] h-6 w-6" />
+            <div class="icon-[heroicons--computer-desktop] h-6 w-6 pointer-events-none" />
           {/if}
         </button>
         <a href="/" aria-label="RSS Feed" class="inline-flex items-center justify-center">

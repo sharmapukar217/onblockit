@@ -86,6 +86,11 @@
     content-visibility: auto;
   }
 
+  button,
+  a {
+    @apply focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-dashed;
+  }
+
   ::view-transition-old(root),
   ::view-transition-new(root) {
     /* animation-duration: 4s; */
