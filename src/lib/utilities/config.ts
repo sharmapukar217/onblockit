@@ -29,7 +29,7 @@ export const prices: Array<Price> = [
     callToAction: {
       target: "_blank",
       text: "Get started",
-      href: "/"
+      href: "#section-pricing"
     }
   },
   {
@@ -57,7 +57,7 @@ export const prices: Array<Price> = [
     callToAction: {
       target: "_blank",
       text: "Get started",
-      href: "#"
+      href: "#section-pricing"
     },
     hasRibbon: true,
     ribbonTitle: "popular"
@@ -84,7 +84,7 @@ export const prices: Array<Price> = [
     callToAction: {
       target: "_blank",
       text: "Get started",
-      href: "#"
+      href: "#section-pricing"
     }
   }
 ];
