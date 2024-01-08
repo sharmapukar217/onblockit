@@ -1,0 +1,120 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap");
+
+/* import tailwind */
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+/* custom css */
+@layer base {
+  ::selection {
+    background-color: lavender;
+  }
+
+  :root,
+  [data-mode="light"] {
+    --border-radius: 0.5rem;
+    --font-sans: "Inter", sans-serif;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --success: 142.1 76.2% 36.3%;
+    --success-foreground: 355.7 100% 97.3%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 210 40% 98%;
+    --border-color: 214.3 31.8% 91.4%;
+  }
+
+  .dark,
+  [data-mode="dark"] {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --success: 142.1 70.6% 45.3%;
+    --success-foreground: 144.9 80.4% 10%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border-color: 217.2 32.6% 17.5%;
+    ::selection {
+      background-color: theme("colors.muted.DEFAULT");
+      color: snow;
+    }
+  }
+
+  * {
+    outline: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+
+  html {
+    @apply 2xl:text-[18px] motion-safe:scroll-smooth;
+  }
+
+  body {
+    overscroll-behavior: contain;
+    -webkit-tap-highlight-color: transparent;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+
+    @apply min-h-screen bg-background text-foreground antialiased font-sans tracking-tight;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: theme("colors.foreground") !important;
+    -webkit-box-shadow: 0 0 0 300px theme("colors.background") inset !important;
+  }
+
+  img {
+    content-visibility: auto;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    [data-mode="system"] {
+      @apply dark;
+    }
+  }
+}
+
+@layer utilities {
+  .typing {
+    overflow: hidden;
+    border-right: 3px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation:
+      typing 2s steps(22, end),
+      blink 0.5s step-end infinite alternate;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
