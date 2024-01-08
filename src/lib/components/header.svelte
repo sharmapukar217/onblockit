@@ -8,6 +8,7 @@
   let navOpened = $state(false);
   let mode = $state<Mode>("system");
   let activeHash = $derived($page.url.hash || "#section-hero");
+  let headerRef = $state<HTMLHeadElement | undefined>(undefined);
 
   const toggleMode = () => {
     const sequence: Array<Mode> = ["light", "dark", "system"];
@@ -16,13 +17,27 @@
     // update dom
     document.documentElement.setAttribute("data-mode", mode);
   };
+
+  $effect(() => {
+    const trackScroll = () => {
+      if (!headerRef) return;
+      headerRef.classList.toggle("md:border-0", window.scrollY <= 50);
+    };
+
+    trackScroll();
+    window.addEventListener("scroll", trackScroll);
+    return () => {
+      window.removeEventListener("scroll", trackScroll);
+    };
+  });
 </script>
 
 <header
+  bind:this={headerRef}
   class="
     sticky top-0 z-40 w-full
     py-3 px-4 md:py-4 md:px-6 mx-auto bg-background/95 select-none
-    flex-none border-b transition-[opacity] ease-in-out md:shadow-none"
+    flex-none transition-all border-b ease-in-out md:shadow-none"
   class:shadow-sm={navOpened}
   use:clickOutside={() => {
     navOpened = false;
