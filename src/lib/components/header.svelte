@@ -2,12 +2,13 @@
   import { page } from "$app/stores";
   import { siteConfig } from "$lib/utilities/config";
   import { clickOutside } from "$lib/utilities/actions";
+  import Logo from "./logo.svelte";
 
   type Mode = "light" | "dark" | "system";
 
   let navOpened = $state(false);
   let mode = $state<Mode>("dark");
-  let activeHash = $state($page.url.hash || "#section-hero");
+  let activeHash = $state($page.url.hash || "#hero");
   let headerRef = $state<HTMLHeadElement | undefined>(undefined);
 
   const toggleMode = () => {
@@ -56,7 +57,9 @@
   <div class="mr-auto rtl:mr-0 flex flex-col md:flex-row md:items-center md:justify-between">
     <div class="flex justify-between items-center">
       <a href="/" class="text-2xl md:text-xl font-bold">
-        🚀 {siteConfig.title}
+        <!-- <img alt="brand logo" src="/logo.svg" /> -->
+        <!-- <span>{siteConfig.title}</span> -->
+        <Logo />
       </a>
 
       <button
@@ -75,19 +78,19 @@
 
     <div class="md:contents {navOpened ? 'contents' : 'hidden'}">
       <nav class="flex flex-col md:flex md:flex-row mt-2 md:mt-0">
-        <a href="#section-hero" class:active={activeHash === "#section-hero"}>
+        <a href="/" class:active={activeHash === "#hero"}>
           <div class="icon-[heroicons--home]" />
           <span>Home</span>
         </a>
-        <a href="#section-features" class:active={activeHash === "#section-features"}>
+        <a href="#features" class:active={activeHash === "#features"}>
           <div class="icon-[heroicons--server-stack]" />
           <span>Features</span>
         </a>
-        <a href="#section-services" class:active={activeHash === "#section-services"}>
+        <a href="#services" class:active={activeHash === "#services"}>
           <div class="icon-[heroicons--wrench-screwdriver]" />
           <span>Services</span></a>
 
-        <a href="#section-pricing" class:active={activeHash === "#section-pricing"}>
+        <a href="#pricing" class:active={activeHash === "#pricing"}>
           <div class="icon-[heroicons--currency-dollar]" />
           <span>Pricing</span></a>
       </nav>
@@ -111,7 +114,7 @@
         </a>
 
         <a
-          href="/"
+          href="#contact-us"
           class="text-sm font-semibold ml-auto md:ml-4 bg-primary text-primary-foreground h-10 rounded-full px-4 flex items-center justify-center"
           >Contact us</a>
       </div>
