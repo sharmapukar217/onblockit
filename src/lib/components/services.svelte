@@ -1,35 +1,25 @@
 <script lang="ts">
+  import type { Item } from "$lib/types";
   import Headline from "./headline.svelte";
   import ItemGrid from "./item-grid.svelte";
   import Section from "./section.svelte";
+
+  const {
+    title = "What services do we offer?",
+    subtitle,
+    services
+  } = $props<{
+    title?: string;
+    subtitle?: string;
+    services: Array<Item>;
+  }>();
 </script>
 
 <Section id="services" class="bg-muted/60 flex" containerClass="max-w-7xl mx-auto">
-  <Headline title="What services do we offer?" tagline="Services" />
+  <Headline {title} {subtitle} tagline="Services" />
 
   <ItemGrid
-    items={[
-      {
-        title: "Best Practices",
-        description: "Best in the town with best practices of digital maketing.",
-        icon: "icon-[flat-color-icons--approval]"
-      },
-      {
-        title: "Call-to-Action",
-        description: "Available on service for 24/7, with best class technical support.",
-        icon: "icon-[flat-color-icons--advertising]"
-      },
-      {
-        title: "Dummy service",
-        description: "Idk what to write, waiting for content managers for the content :-(",
-        icon: "icon-[flat-color-icons--like]"
-      },
-      {
-        title: "Pricing",
-        description: "Services at reasonable prices, choices await. Can you resist?",
-        icon: "icon-[flat-color-icons--currency-exchange]"
-      }
-    ]}
+    items={services}
     columns={3}
     classes={{
       container: "gap-4 md:gap-6",

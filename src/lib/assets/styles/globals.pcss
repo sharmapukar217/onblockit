@@ -123,21 +123,9 @@
     white-space: nowrap;
     animation:
       typing 2s steps(22, end),
-      blink 0.5s step-end infinite alternate;
+      blink 0.5s step-end infinite alternate,
+      borderExpand 0.0001s 2s forwards;
   }
-
-  /* .fade-in {
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-  }
-
-  @keyframes fade-in {
-    to {
-      opacity: 1;
-    }
-  } */
 
   @keyframes typing {
     from {
@@ -151,6 +139,13 @@
   @keyframes blink {
     50% {
       border-color: transparent;
+    }
+  }
+
+  @keyframes borderExpand {
+    to {
+      margin-right: 10px;
+      border-right-width: 20px;
     }
   }
 }

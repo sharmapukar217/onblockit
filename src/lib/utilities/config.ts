@@ -1,9 +1,39 @@
-import type { Price } from "$lib/types";
+import type { Price, SocialLink } from "$lib/types";
 
 export const siteConfig = {
   title: "OnBlockIt",
-  description: "Your LinkedIn Growth..."
+  description: "Your LinkedIn Growth...",
+  descriptionLong:
+    "Our digital advertising strategies employ various digital channels to execute precisely targeted advertising campaigns, ensuring the identification of your ideal customer without the inefficiency of sifting through unqualified leads.  "
 };
+
+export const socialLinks: Array<SocialLink> = [
+  {
+    href: "",
+    name: "facebook",
+    icon: "icon-[logos--facebook]"
+  },
+  {
+    href: "",
+    name: "instagram",
+    icon: "icon-[skill-icons--instagram]"
+  },
+  {
+    href: "",
+    name: "twitter",
+    icon: "icon-[skill-icons--twitter]"
+  },
+  {
+    href: "",
+    name: "github",
+    icon: "icon-[skill-icons--github-light]"
+  },
+  {
+    href: "",
+    name: "linkedin",
+    icon: "icon-[skill-icons--linkedin]"
+  }
+];
 
 export const prices: Array<Price> = [
   {

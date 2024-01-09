@@ -7,6 +7,13 @@ export interface Item {
   image?: Image;
 }
 
+export interface SocialLink {
+  name: string;
+  href: string;
+  icon: string;
+  disabled?: true;
+}
+
 export interface ItemGrid {
   items?: Array<Item>;
   columns?: number;

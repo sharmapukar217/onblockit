@@ -34,6 +34,15 @@ devDependencies:
   '@iconify-json/heroicons':
     specifier: ^1.1.19
     version: 1.1.19
+  '@iconify-json/logos':
+    specifier: ^1.1.42
+    version: 1.1.42
+  '@iconify-json/openmoji':
+    specifier: ^1.1.46
+    version: 1.1.46
+  '@iconify-json/skill-icons':
+    specifier: ^1.1.7
+    version: 1.1.7
   '@iconify/tailwind':
     specifier: ^0.1.4
     version: 0.1.4
@@ -630,6 +639,24 @@ packages:
 
   /@iconify-json/heroicons@1.1.19:
     resolution: {integrity: sha512-uW2F9vdGll59W21ocBl+wR4Ve+/1CsmzBqPTuOaR3CbKzqnJKwzGASvC4Op0uTieFVWfBaevnzcRxwNo73J29g==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos@1.1.42:
+    resolution: {integrity: sha512-/f+frtPm3m3Z30oy8Pk+QqRDkbmAiIaWGPl5CmsCXm15MVfvw9a/V/gD7WzdyuSGAZcFuQaqbHXj92y/n+2ifg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/openmoji@1.1.46:
+    resolution: {integrity: sha512-piE3OjR9YqcLIOcM7gd6G/f0XuhK8k3c23LKjP1D3khv9OsvyqjB+TjSBDlxQps4RrxvYS5S+n6BTvejSzS2yA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/skill-icons@1.1.7:
+    resolution: {integrity: sha512-nN2Cb7B2oMJnwLnG8ZY/l/kKQqrSEQXZmHPpLtqDL7uDw4+4sqgGB+LxjDLFGvXY5HVe538sv3PJikPfMnxesg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

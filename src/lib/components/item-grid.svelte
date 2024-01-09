@@ -38,14 +38,14 @@
               </h3>
             {/if}
             {#if item.description}
-              <p
+              <div
                 class={twMerge(
                   `${item.title ? "mt-3" : ""} text-muted-foreground`,
                   classes.description,
                   item.classes?.description
                 )}>
-                {item.description}
-              </p>
+                {@html item.description}
+              </div>
             {/if}
           </div>
         </div>

@@ -93,9 +93,10 @@
       </nav>
 
       <div class="inline-flex items-center mt-2 md:mt-0">
+        <!-- NOT COMPLETELY REMOVING IT, INSTEAD OF HIDING IT -->
         <button
           aria-label="Toggle theme mode"
-          class="inline-flex items-center justify-center ml-2 mr-4 py-2"
+          class="hidden items-center justify-center ml-2 mr-4 py-2"
           onclick={toggleMode}>
           {#if mode === "light"}
             <div class="icon-[heroicons--sun] h-6 w-6 pointer-events-none" />
@@ -120,12 +121,12 @@
 
 <style lang="postcss">
   nav a {
-    @apply font-medium hover:text-primary p-1.5 inline-flex items-center space-x-2.5;
+    @apply font-medium text-foreground/80 hover:text-foreground p-1.5 inline-flex items-center space-x-2.5;
   }
   nav a div {
     @apply h-5 w-5 md:hidden;
   }
   a.active {
-    @apply underline decoration-wavy underline-offset-2;
+    @apply !text-primary font-semibold;
   }
 </style>
