@@ -21,11 +21,11 @@
     wb.addEventListener("waiting", (event) => {
       toast(UpdatePrompt, {
         // @ts-ignore passing custom props
-        props: { onUpdate: wb.messageSkipWaiting }
+        props: { onUpdate: () => wb.messageSkipWaiting() }
       });
 
-      if (confirm("An update is availabe. Would you like to update?")) {
-      }
+      // if (confirm("An update is availabe. Would you like to update?")) {
+      // }
     });
 
     wb.register();

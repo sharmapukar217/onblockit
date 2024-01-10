@@ -15,7 +15,7 @@
   <div class="grid grid-cols-2 gap-2">
     <div>
       <button
-        onclick={onUpdate}
+        onclick={() => onUpdate?.()}
         class="inline-flex justify-center w-full px-2 py-1.5 rounded-md text-xs font-medium text-center bg-primary text-primary-foreground hover:bg-primary/80">
         Update</button>
     </div>
