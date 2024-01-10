@@ -43,7 +43,8 @@ export default {
       xl: `calc(var(--border-radius) + 4px)`,
       lg: `var(--border-radius)`,
       md: `calc(var(--border-radius) - 2px)`,
-      sm: "calc(var(--border-radius) - 4px)"
+      sm: "calc(var(--border-radius) - 4px)",
+      full: "100000px"
     }),
     fontFamily: () => ({
       sans: ["var(--font-sans,'')", ...fontFamily.sans]
