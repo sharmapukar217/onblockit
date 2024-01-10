@@ -2,7 +2,7 @@
   import { siteConfig } from "$lib/utilities/config";
 </script>
 
-<div class="inline-flex items-center">
+<div class="contents">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
@@ -382,7 +382,7 @@
   Z" />
   </svg>
 
-  <span>
+  <span class="mt-1">
     {siteConfig.title}
   </span>
 </div>

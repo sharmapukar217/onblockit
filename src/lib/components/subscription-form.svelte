@@ -24,21 +24,15 @@
     <div class="icon-[heroicons--envelope-open] h-5 w-5 text-muted-foreground" />
   </div>
 
-  <input
-    required
-    type="email"
-    placeholder="hi@email.com"
-    class="w-full rounded-full h-12 pl-11 pr-28
-          bg-muted text-muted-foreground text-sm font-semibold
-          border-[3px] focus:border-primary transition-all hover:bg-muted/90
-        " />
+  <input type="email" placeholder="hi@email.com" class="rounded-full h-12 pl-11 pr-28" required />
   <div class="absolute h-full right-0 p-1.5">
     <button
       type="submit"
       class="
           text-sm font-semibold
           bg-primary text-primary-foreground
-          rounded-full h-full px-3
-          ">Subscribe</button>
+          rounded-full h-full px-3">
+      Subscribe
+    </button>
   </div>
 </form>

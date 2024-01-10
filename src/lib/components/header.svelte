@@ -1,23 +1,22 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { siteConfig } from "$lib/utilities/config";
-  import { clickOutside } from "$lib/utilities/actions";
   import Logo from "./logo.svelte";
+  import { clickOutside } from "$lib/utilities/actions";
 
-  type Mode = "light" | "dark" | "system";
+  // type Mode = "light" | "dark" | "system";
 
   let navOpened = $state(false);
-  let mode = $state<Mode>("dark");
+  // let mode = $state<Mode>("dark");
   let activeHash = $state($page.url.hash || "#hero");
   let headerRef = $state<HTMLHeadElement | undefined>(undefined);
 
-  const toggleMode = () => {
-    const sequence: Array<Mode> = ["light", "dark", "system"];
-    mode = sequence[sequence.indexOf(mode) + 1] ?? "light";
+  // const toggleMode = () => {
+  //   const sequence: Array<Mode> = ["light", "dark", "system"];
+  //   mode = sequence[sequence.indexOf(mode) + 1] ?? "light";
 
-    // update dom
-    document.documentElement.setAttribute("data-mode", mode);
-  };
+  //   // update dom
+  //   document.documentElement.setAttribute("data-mode", mode);
+  // };
 
   $effect(() => {
     const sections = document.querySelectorAll("section");
@@ -56,9 +55,7 @@
   }}>
   <div class="mr-auto rtl:mr-0 flex flex-col md:flex-row md:items-center md:justify-between">
     <div class="flex justify-between items-center">
-      <a href="/" class="text-2xl md:text-xl font-bold">
-        <!-- <img alt="brand logo" src="/logo.svg" /> -->
-        <!-- <span>{siteConfig.title}</span> -->
+      <a href="/" class="text-2xl md:text-xl font-bold inline-flex items-center px-2 py-0.5">
         <Logo />
       </a>
 
@@ -97,7 +94,7 @@
 
       <div class="inline-flex items-center mt-2 md:mt-0">
         <!-- NOT COMPLETELY REMOVING IT, INSTEAD OF HIDING IT -->
-        <button
+        <!-- <button
           aria-label="Toggle theme mode"
           class="hidden items-center justify-center ml-2 mr-4 py-2"
           onclick={toggleMode}>
@@ -108,8 +105,13 @@
           {:else}
             <div class="icon-[heroicons--computer-desktop] h-6 w-6 pointer-events-none" />
           {/if}
-        </button>
-        <a href="/" aria-label="RSS Feed" class="inline-flex items-center justify-center">
+        </button> -->
+
+        <a
+          href="/rss.xml"
+          target="_blank"
+          aria-label="RSS Feed"
+          class="inline-flex items-center justify-center">
           <div class="icon-[heroicons--rss] h-6 w-6" />
         </a>
 
@@ -124,7 +126,7 @@
 
 <style lang="postcss">
   nav a {
-    @apply font-medium text-foreground/80 hover:text-foreground p-1.5 inline-flex items-center space-x-2.5;
+    @apply font-medium text-foreground/80 hover:text-foreground py-1.5 pl-1.5 pr-4 inline-flex items-center space-x-2.5;
   }
   nav a div {
     @apply h-5 w-5 md:hidden;

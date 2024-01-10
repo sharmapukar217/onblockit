@@ -3,7 +3,7 @@
   import SubscriptionForm from "./subscription-form.svelte";
 </script>
 
-<section id="section-hero" class="relative md:-mt-[76px] not-prose text-balance">
+<section id="hero" class="relative md:-mt-[76px] not-prose text-balance">
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
