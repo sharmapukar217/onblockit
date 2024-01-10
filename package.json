@@ -83,8 +83,7 @@
   },
   "lint-staged": {
     "**/*.{ts(x),svelte}": [
-      "eslint --fix --ignore-path .gitignore",
-      "vitest"
+      "eslint --fix --ignore-path .gitignore"
     ],
     "*.{json,css,html}": "prettier -w --ignore-path .gitignore --ignore-unknown"
   },
