@@ -105,7 +105,7 @@
           {:else}
             <div class="icon-[heroicons--computer-desktop] h-6 w-6 pointer-events-none" />
           {/if}
-        </button> -->
+        </button> 
 
         <a
           href="/rss.xml"
@@ -114,6 +114,7 @@
           class="inline-flex items-center justify-center">
           <div class="icon-[heroicons--rss] h-6 w-6" />
         </a>
+        -->
 
         <a
           href="#contact-us"
