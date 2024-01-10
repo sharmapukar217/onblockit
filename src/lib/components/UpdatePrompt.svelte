@@ -1,8 +1,7 @@
 <script lang="ts">
   import t, { type Toast } from "svelte-french-toast";
 
-  export let toast: Toast;
-  export let onUpdate: () => void;
+  export let toast: Toast & { onUpdate: () => void };
 </script>
 
 <div
@@ -15,7 +14,7 @@
   <div class="grid grid-cols-2 gap-2">
     <div>
       <button
-        onclick={() => onUpdate?.()}
+        onclick={toast.onUpdate}
         class="inline-flex justify-center w-full px-2 py-1.5 rounded-md text-xs font-medium text-center bg-primary text-primary-foreground hover:bg-primary/80">
         Update</button>
     </div>
