@@ -2,7 +2,7 @@ import type { Price, SocialLink } from "$lib/types";
 
 export const siteConfig = {
   title: "OnBlockIt",
-  description: "Your LinkedIn Growth...",
+  description: "Your LinkedIn Growth Partner...",
   descriptionLong:
     "Our digital advertising strategies employ various digital channels to execute precisely targeted advertising campaigns, ensuring the identification of your ideal customer without the inefficiency of sifting through unqualified leads.  "
 };
