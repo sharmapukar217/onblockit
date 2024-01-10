@@ -49,7 +49,7 @@
 <Toaster
   position="bottom-end"
   toastOptions={{
-    className: "!bg-muted/90 !text-foreground"
+    className: "!bg-muted/90 !text-muted-foreground text-sm font-semibold"
   }} />
 
 <!-- service worker for offline loads -->
