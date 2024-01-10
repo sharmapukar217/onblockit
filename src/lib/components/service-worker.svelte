@@ -20,6 +20,7 @@
     });
     wb.addEventListener("waiting", (event) => {
       toast(UpdatePrompt, {
+        id: "sw",
         duration: Infinity,
         // @ts-ignore passing custom props
         onUpdate: () => wb.messageSkipWaiting()

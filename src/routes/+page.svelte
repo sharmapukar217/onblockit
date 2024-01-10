@@ -65,35 +65,80 @@
 <Note />
 
 <!-- features section -->
+<!-- use icon: <svg> for direct icor or
+     iconClass: 'icon--[provider--icon-name]' for iconify icons
+     see `https://icon-sets.iconify.design` for icons
+-->
+
 <Features
   title="What you get with {siteConfig.title}?"
   subtitle="One of the most professional and comprehensive digital marketing agency currently on the market..."
   features={[
     {
-      title: "Feature 1",
-      description: "a short but clear description of feature (1)"
-      // icon: "tabler:brand-tailwind"
+      title: "Profile Optimization",
+      description: `<ul>
+        <li> - Create a professional and compelling LinkedIn profile</li>
+        <li> - Use a high-quality profile picture and an attention-grabbing headline.</li>  
+      </ul>`,
+      iconClass: "icon-[heroicons--wrench-screwdriver]"
     },
     {
-      title: "Feature 2",
-      description: "a short but clear description of feature (2)"
-      // icon: "tabler:brand-tailwind"
+      title: "Content Sharing",
+      description: `<ul>
+        <li> - Share relevant and engaging content regularly.</li>  
+        <li> - Utilize various media formats, such as text, images, and videos.</li>  
+      </ul>`,
+      iconClass: "icon-[heroicons--share]"
     },
     {
-      title: "Feature 3",
-      description: "a short but clear description of feature (3)"
-      // icon: "tabler:brand-tailwind"
+      title: "Connection Building",
+      description: `
+        <ul>
+          <li> - Connect with professionals in your industry.</li>
+          <li> - Personalize connection requests to foster meaningful connections.</li>
+        </ul>
+      `,
+      iconClass: "icon-[heroicons--link]"
     },
     {
-      title: "Feature 4",
-      description: "a short but clear description of feature (4)"
-      // icon: "tabler:brand-tailwind"
+      title: "Group Participation",
+      description: `
+        <ul>
+          <li> - Join and actively participate in LinkedIn groups related to your niche.</li>
+          <li> - Share insights, ask questions, and engage in discussions.</li>
+        </ul>
+      `,
+      iconClass: "icon-[heroicons--users]"
     },
     {
-      title: "Starred by many",
-      description:
-        "We have been selected as one of the best and mostly starred digtal marketing agent in 2023.",
-      icon: "icon-[heroicons--star]"
+      title: "Targeted Advertising",
+      description: `
+        <ul>
+          <li> - Explore LinkedIn's advertising options for targeted promotions.</li>
+          <li> - Define specific demographics and characteristics for your ad audience.</li>
+        </ul>
+      `,
+      iconClass: "icon-[bi--badge-ad]"
+    },
+    {
+      title: "Authority Building",
+      description: `
+        <ul>
+          <li> - Position yourself as an industry expert by sharing valuable insights.</li>
+          <li> - Publish articles or posts showcasing your expertise.</li>
+        </ul>
+      `,
+      iconClass: "icon-[bi--shield-slash]"
+    },
+    {
+      title: "Lead Generation",
+      description: `
+        <ul>
+          <li> - Position yourself as an industry expert by sharing valuable insights.</li>
+          <li> - Publish articles or posts showcasing your expertise.</li>
+        </ul>
+      `,
+      iconClass: "icon-[heroicons--arrow-path]"
     }
   ]} />
 
@@ -104,22 +149,22 @@
     {
       title: "Best Practices",
       description: "Best in the town with best practices of digital maketing.",
-      icon: "icon-[flat-color-icons--approval]"
+      iconClass: "icon-[flat-color-icons--approval]"
     },
     {
       title: "Call-to-Action",
       description: "Available on service for 24/7, with best class technical support.",
-      icon: "icon-[flat-color-icons--advertising]"
+      iconClass: "icon-[flat-color-icons--advertising]"
     },
     {
-      title: "Dummy service",
-      description: "Idk what to write, waiting for content managers for the content :-(",
-      icon: "icon-[flat-color-icons--like]"
+      title: "Linkedin Marketing",
+      description: "We provide you techincal support for boosing your projects on linked in.",
+      iconClass: "icon-[skill-icons--linkedin]"
     },
     {
       title: "Pricing",
       description: "Services at reasonable prices, choices await. Can you resist?",
-      icon: "icon-[flat-color-icons--currency-exchange]"
+      iconClass: "icon-[flat-color-icons--currency-exchange]"
     }
   ]} />
 

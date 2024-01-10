@@ -15,18 +15,23 @@
       classes.container
     )}>
     {#each items as item}
-      {@const icon = item.icon ?? defaultIcon}
+      {@const iconClass = item.iconClass ?? defaultIcon}
       <div>
         <div class={twMerge("flex flex-row max-w-md", classes.panel, item.classes?.panel)}>
           <div class="flex justify-center mr-2 rtl:mr-0 rtl:ml-2">
-            {#if icon}
+            {#if iconClass || item.icon}
               <div
                 class={twMerge(
                   "flex justify-center items-center",
                   classes.iconWrapper,
                   item.classes?.iconWrapper
                 )}>
-                <div class={twMerge("w-7 h-7 ", icon, classes.icon, item.classes?.icon)} />
+                {#if item.icon}
+                  {@html item.icon}
+                  <!-- <svelte:element this={item.icon} /> -->
+                {:else}
+                  <div class={twMerge("w-7 h-7 ", iconClass, classes.icon, item.classes?.icon)} />
+                {/if}
               </div>
             {/if}
           </div>
