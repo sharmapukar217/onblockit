@@ -124,9 +124,8 @@
     border-right: 3px solid hsl(var(--primary));
     white-space: nowrap;
     animation:
-      typing 2s steps(22, end),
-      blink 0.5s step-end infinite alternate,
-      borderExpand 0.0001s 2s forwards;
+      typing 2.5s steps(22, end),
+      /* blink 0.5s step-end infinite alternate, */ borderHide 2.5s forwards;
   }
 
   @keyframes typing {
@@ -138,16 +137,16 @@
     }
   }
 
-  @keyframes blink {
+  /* @keyframes blink {
     50% {
       border-color: transparent;
     }
-  }
+  } */
 
-  @keyframes borderExpand {
+  @keyframes borderHide {
     to {
-      margin-right: 10px;
-      border-right-width: 10px;
+      /* margin-right: 10px; */
+      border-right-width: 0px;
     }
   }
 }

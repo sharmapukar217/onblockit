@@ -42,8 +42,8 @@
     - @tailwindcss/forms
 -->
 
-<footer class="bg-background">
-  <div class="mx-auto max-w-screen-xl px-4 pb-4 pt-16 sm:px-6 lg:px-8">
+<footer class="bg-background border-t">
+  <div class="mx-auto max-w-screen-xl px-4 pb-4 pt-16 sm:px-6 md:px-8">
     <div class="mx-auto max-w-md space-y-3">
       <strong class="block text-center text-xl font-bold text-foreground sm:text-3xl">
         Want us to email you with the latest news?
@@ -51,8 +51,8 @@
       <SubscriptionForm />
     </div>
 
-    <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
-      <div class="mx-auto max-w-sm lg:max-w-none">
+    <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-32">
+      <div class="mx-auto max-w-sm md:max-w-none">
         <p class="mt-4 text-center text-muted-foreground md:text-left md:text-lg">
           {siteConfig.descriptionLong}
         </p>
@@ -61,7 +61,7 @@
         <SocialLinks />
       </div>
 
-      <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+      <div class="grid grid-cols-3 gap-8 text-left">
         <div>
           <strong class="font-medium text-foreground/80"> Services </strong>
 
