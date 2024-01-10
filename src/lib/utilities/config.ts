@@ -37,22 +37,30 @@ export const socialLinks: Array<SocialLink> = [
 
 export const prices: Array<Price> = [
   {
-    title: "basic",
+    title: "basic package",
     subtitle: "Optimal choice for personal use",
-    price: 29,
+    price: 20,
     period: "per month",
     items: [
       {
-        description: "Etiam in libero, et volutpat"
+        description: "Linkedin account creation"
       },
       {
-        description: "Aenean ac nunc dolor tristique"
+        description: "Page setup & acount management"
       },
       {
-        description: "Cras scelerisque accumsan lib"
+        description: "Other basic things"
       },
       {
-        description: "In hac habitasse",
+        description: "Linkedin marketing",
+        icon: "icon-[flat-color-icons--cancel]"
+      },
+      {
+        description: "Lead generation",
+        icon: "icon-[flat-color-icons--cancel]"
+      },
+      {
+        description: "Content creation with graphics",
         icon: "icon-[flat-color-icons--cancel]"
       }
     ],
@@ -63,25 +71,36 @@ export const prices: Array<Price> = [
     }
   },
   {
-    title: "standard",
+    title: "advance package",
     subtitle: "Optimal choice for small teams",
-    price: 69,
+    price: 100,
     period: "Per Month",
     items: [
       {
-        description: "Proin vel laoreet"
+        description: "Linkedin account creation"
       },
       {
-        description: "Ut efficitur habitasse egestas"
+        description: "Page setup & acount management"
       },
       {
-        description: "Volutpat hac curabitur"
+        description: "Other basic things"
       },
       {
-        description: "Pellentesque blandit ut nibh"
+        description: "Linkedin marketing"
       },
       {
-        description: "Donec fringilla sem"
+        description: "Lead generation"
+      },
+      {
+        description: "Content creation with graphics"
+      },
+      {
+        description: "Sales navigator &  cold emails",
+        icon: "icon-[flat-color-icons--cancel]"
+      },
+      {
+        description: "Content video, sales",
+        icon: "icon-[flat-color-icons--cancel]"
       }
     ],
     callToAction: {
@@ -93,22 +112,34 @@ export const prices: Array<Price> = [
     ribbonTitle: "popular"
   },
   {
-    title: "premium",
+    title: "premium package",
     subtitle: "Optimal choice for companies",
-    price: 199,
+    price: 200,
     period: "Per Month",
     items: [
       {
-        description: "Curabitur suscipit risus"
+        description: "Linkedin account creation"
       },
       {
-        description: "Aliquam habitasse malesuada"
+        description: "Page setup & acount management"
       },
       {
-        description: "Suspendisse sit amet blandit"
+        description: "Other basic things"
       },
       {
-        description: "Suspendisse auctor blandit dui"
+        description: "Linkedin marketing"
+      },
+      {
+        description: "Lead generation"
+      },
+      {
+        description: "Content creation with graphics"
+      },
+      {
+        description: "Sales navigator and cold emails"
+      },
+      {
+        description: "Content video, sales and much more..."
       }
     ],
     callToAction: {
