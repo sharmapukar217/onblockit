@@ -82,7 +82,7 @@
     ]
   },
   "lint-staged": {
-    "**/*.ts(x),svelte": [
+    "**/*.{ts(x),svelte}": [
       "eslint --fix --ignore-path .gitignore",
       "vitest"
     ],
