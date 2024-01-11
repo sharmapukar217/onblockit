@@ -42,7 +42,7 @@
     - @tailwindcss/forms
 -->
 
-<footer class="bg-background border-t">
+<footer id="footer" class="bg-background border-t">
   <div class="mx-auto max-w-screen-xl px-4 pb-4 pt-16 sm:px-6 md:px-8">
     <div class="mx-auto max-w-md space-y-3">
       <strong class="block text-center text-xl font-bold text-foreground sm:text-3xl">
@@ -52,8 +52,8 @@
     </div>
 
     <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-32">
-      <div class="mx-auto max-w-sm md:max-w-none">
-        <p class="mt-4 text-center text-muted-foreground md:text-left md:text-lg">
+      <div>
+        <p class="mt-4 text-muted-foreground text-left">
           {siteConfig.descriptionLong}
         </p>
 

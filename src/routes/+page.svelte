@@ -176,23 +176,23 @@
   questions={[
     {
       title: "What does a Digital Marketer do?",
-      description: `Digital Marketing is many elements all working together to deliver on the marketing strategy. The Digital Marketer’s job is to measure progress toward the strategy goals by monitoring the performance on each platform. The tactics may involve social media, search engine optimization (SEO), email marketing, pay-per-click (PPC), and/or blogging.<br>Each of these channels requires trained and experienced professionals who understand how their efforts contribute to the larger strategy and goals. The digital marketing team has many specialists, working together toward the overall goals.`
+      description: `Digital Marketing is many elements all working together to deliver on the marketing strategy.`
     },
     {
       title: `Why ${siteConfig.title}?`,
-      description: `Because we provide one of the best marketing services and advices available within the market which helps to grow your business more productively. <br> We provide affordable pricing plans and our services are based on <i>pay as you go</i> model, so pay as you grow 😀`
+      description: `Because we provide one of the best linkedin marketing services and advices available within the market with <i>pay as you go</i> model which helps to grow your business more productively.`
     },
     {
       title: "How can I hire the team?",
-      description: `Duis aute irure dolor in reprehenderit in voluptate velit esse  in culpa qui officia deserunt mollit anim id est laborum.`
+      description: `You can use our <a href="#contact-us" class="text-primary hover:underline">contact form</a> or contact us directly using the contact details which you can find on <a href="#footer" class="font-semibold hover:underline">footer</a> section.`
     },
     {
       title: "What is it like working with us?",
-      description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact. We also evaluate your current online presence, applying sophisticated software tools to mine valuable insights that we then use to form a cohesive strategy to deliver the best ROI on your marketing spend with us.`
+      description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact.`
     },
     {
       title: "What is your pricing model and what packages do you offer?",
-      description: `The package of services we offer you will be based explicitly on your needs. Prior to developing a proposal for you, we will request a phone meeting to understand where you are having challenges. Then, in sending you a proposal, we will book time with you to review the proposal together, ensuring you understand each of the service deliverables described.`
+      description: `The package of services we offer you will be based explicitly on your needs. .`
     }
   ]} />
 

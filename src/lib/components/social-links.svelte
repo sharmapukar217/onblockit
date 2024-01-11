@@ -2,7 +2,7 @@
   import { socialLinks } from "$lib/utilities/config";
 </script>
 
-<div class="mt-6 flex justify-center gap-4 lg:justify-start">
+<div class="mt-6 flex gap-4">
   {#each socialLinks.filter((l) => !l.disabled) as link (link.name)}
     <a href={link.href} target="_blank" rel="noreferrer">
       <span class="sr-only"> {link.name} </span>
