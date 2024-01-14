@@ -5,7 +5,7 @@
   import Section from "./section.svelte";
 </script>
 
-<Section id="pricing">
+<Section id="pricing" class="bg-muted/60">
   <Headline
     title="How much does our services cost?"
     subtitle="Only pay for what you need and change subscription at any time..."

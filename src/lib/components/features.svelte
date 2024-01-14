@@ -12,7 +12,7 @@
   }>();
 </script>
 
-<Section id="features">
+<Section id="features" class="bg-muted/60">
   <Headline {title} {subtitle} tagline="Features" />
   <ItemGrid
     items={features}

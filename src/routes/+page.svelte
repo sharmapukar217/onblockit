@@ -15,7 +15,6 @@
 
   // sections
   import Hero from "$lib/components/hero.svelte";
-  import Note from "$lib/components/note.svelte";
   import Features from "$lib/components/features.svelte";
   import Services from "$lib/components/services.svelte";
   import Pricing from "$lib/components/pricing.svelte";
@@ -60,9 +59,6 @@
 
 <!-- hero section -->
 <Hero />
-
-<!-- note section -->
-<Note />
 
 <!-- features section -->
 <!-- use icon: <svg> for direct icor or

@@ -61,7 +61,77 @@
         <SocialLinks />
       </div>
 
-      <div class="grid grid-cols-3 gap-8 text-left">
+      <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3 text-left">
+        <div class="w-full">
+          <strong class="font-medium text-foreground/80 block mb-2"> USA </strong>
+
+          <div class="flex flex-col space-y-1">
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--building-office] min-h-4 min-w-4" />
+              <small class="text-muted-foreground">Hyperce, LLC</small>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--map-pin] min-h-4 min-w-4" />
+              <small class="text-muted-foreground">
+                800 N King Street Suite 304 1198 Wilmington, DE 19801 United States
+              </small>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--envelope] min-h-4 min-w-4" />
+              <a href="mailto:hi@hyperce.com" target="_blank">
+                <small class="text-muted-foreground"> hi@hyperce.com </small>
+              </a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[logos--whatsapp-icon] min-h-4 min-w-4" />
+              <a href="https://wa.me/16178195576" target="_blank">
+                <small class="text-muted-foreground">+1-617-819-5576 </small>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <strong class="font-medium text-foreground/80 block mb-2"> NEPAL </strong>
+
+          <div class="flex flex-col space-y-1">
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--building-office] min-h-4 min-w-4" />
+              <small class="text-muted-foreground">Hyperce Technologies Pvt. Ltd.</small>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--map-pin] min-h-4 min-w-4" />
+              <small class="text-muted-foreground">
+                Adarshanagar, Chandragiri - 14, Kathmandu, Nepal, 44600
+              </small>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[heroicons--envelope] min-h-4 min-w-4" />
+              <a href="mailto:hi@hyperce.com" target="_blank">
+                <small class="text-muted-foreground"> hi@hyperce.com </small>
+              </a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+              <div class="icon-[logos--whatsapp-icon] min-h-4 min-w-4" />
+              <a href="https://wa.me/9779840260599" target="_blank">
+                <small class="text-muted-foreground">+977-9840260599</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="text-left">
+        <strong>USA</strong>
+      </div> -->
+
+      <!-- <div class="grid grid-cols-3 gap-8 text-left">
         <div>
           <strong class="font-medium text-foreground/80"> Services </strong>
 
@@ -123,7 +193,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- <div class="mt-16 border-t border-gray-100 pt-8">

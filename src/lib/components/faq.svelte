@@ -11,7 +11,7 @@
   }>();
 </script>
 
-<Section id="faq" class="bg-muted/60">
+<Section id="faq">
   <Headline {title} tagline="FAQ" />
 
   <ItemGrid
