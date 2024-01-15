@@ -42,6 +42,11 @@
 <svelte:head>
   <title>{siteConfig.title}-{siteConfig.description}</title>
   <meta name="description" content={siteConfig.description} />
+
+  <!-- Common OG Tags -->
+  <meta property="og:title" content={siteConfig.title} />
+  <meta property="og:description" content={siteConfig.description} />
+  <meta property="og:image" content="/favicon.ico" />
 </svelte:head>
 
 <!-- toasters and rest -->
