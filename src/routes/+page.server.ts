@@ -1,3 +1,4 @@
+import { env } from "$env/dynamic/private";
 import { fail, error } from "@sveltejs/kit";
 import { contatFormSchema } from "$lib/zod-schema.js";
 import { superValidate, setMessage } from "sveltekit-superforms/server";
@@ -48,12 +49,19 @@ export const actions = {
        * so no validation required, just handle api call here to add to subscription
        **/
       const formData = await request.formData();
-      const email = formData.get("email");
 
-      // TODO: update tag id to onboardit tag id
+      // NOTE: tag id: 11 means onblockit tag
       const response = await fetch(ZIPPYBOX_API_URL, {
         method: "post",
-        body: JSON.stringify({ email, tags: [1] })
+        body: JSON.stringify({
+          tags: [11],
+          email: formData.get("email")
+        }),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${env.ZIPPYBOX_API_TOKEN}`
+        }
       });
 
       if (response.ok) {
