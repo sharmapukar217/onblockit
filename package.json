@@ -24,7 +24,6 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
-    "formsnap": "^0.4.2",
     "rss": "^1.2.2",
     "svelte-french-toast": "^1.2.0",
     "sveltekit-superforms": "^1.13.2",
