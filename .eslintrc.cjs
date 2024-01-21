@@ -29,6 +29,8 @@ module.exports = {
     }
   ],
   rules: {
+    "svelte/no-at-html-tags": ["off"],
+    "svelte/valid-compile": ["off"], // TODO: remove this, adding due to some svelte v5 bug
     "@typescript-eslint/no-explicit-any": ["off"],
     "@typescript-eslint/no-unused-vars": [
       "warn",

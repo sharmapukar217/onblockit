@@ -37,9 +37,9 @@ export const socialLinks: Array<SocialLink> = [
 
 export const prices: Array<Price> = [
   {
-    title: "basic package",
+    title: "basic",
     subtitle: "Optimal choice for personal use",
-    price: 20,
+    price: 50,
     period: "per month",
     items: [
       {
@@ -68,10 +68,11 @@ export const prices: Array<Price> = [
       target: "_blank",
       text: "Get started",
       href: "#section-pricing"
-    }
+    },
+    summary: "Marketing And Lead Generation, Increasing Your Product Sales and Popularity"
   },
   {
-    title: "advance package",
+    title: "advance",
     subtitle: "Optimal choice for small teams",
     price: 100,
     period: "Per Month",
@@ -109,10 +110,11 @@ export const prices: Array<Price> = [
       href: "#section-pricing"
     },
     hasRibbon: true,
-    ribbonTitle: "popular"
+    ribbonTitle: "popular",
+    summary: "Marketing And Lead Generation , Profile Build Increasing Connection"
   },
   {
-    title: "premium package",
+    title: "premium",
     subtitle: "Optimal choice for companies",
     price: 200,
     period: "Per Month",
@@ -146,6 +148,7 @@ export const prices: Array<Price> = [
       target: "_blank",
       text: "Get started",
       href: "#section-pricing"
-    }
+    },
+    summary: `Marketing And Lead Generation , Profile Build Acquiring Connection From Expected Country & People`
   }
 ];

@@ -3,7 +3,7 @@
   import * as pkg from "workbox-window";
   import { dev } from "$app/environment";
   import { toast } from "svelte-french-toast";
-  import UpdatePrompt from "./UpdatePrompt.svelte";
+  import UpdatePrompt from "./update-prompt.svelte";
 
   onMount(() => {
     const wb = new pkg.Workbox("/service-worker.js", {
@@ -18,16 +18,13 @@
     wb.addEventListener("controlling", () => {
       window.location.reload();
     });
-    wb.addEventListener("waiting", (event) => {
+    wb.addEventListener("waiting", () => {
       toast(UpdatePrompt, {
         id: "sw",
         duration: Infinity,
-        // @ts-ignore passing custom props
+        // @ts-expect-error passing custom props
         onUpdate: () => wb.messageSkipWaiting()
       });
-
-      // if (confirm("An update is availabe. Would you like to update?")) {
-      // }
     });
 
     wb.register();

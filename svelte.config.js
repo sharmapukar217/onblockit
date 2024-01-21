@@ -8,6 +8,9 @@ const config = {
     adapter: adapter(),
     serviceWorker: {
       register: false
+    },
+    files: {
+      assets: "public"
     }
   },
   vitePlugin: {

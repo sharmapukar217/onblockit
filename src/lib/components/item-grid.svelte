@@ -28,7 +28,6 @@
                 )}>
                 {#if item.icon}
                   {@html item.icon}
-                  <!-- <svelte:element this={item.icon} /> -->
                 {:else}
                   <div class={twMerge("w-7 h-7 ", iconClass, classes.icon, item.classes?.icon)} />
                 {/if}

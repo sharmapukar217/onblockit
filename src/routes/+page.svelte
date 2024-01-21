@@ -3,7 +3,7 @@
 
   import { dev } from "$app/environment";
   import { onNavigate } from "$app/navigation";
-  import { siteConfig } from "$lib/utilities/config";
+  import { prices, siteConfig } from "$lib/utilities/config";
   import { inject } from "@vercel/analytics";
   import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
 
@@ -177,11 +177,11 @@
   questions={[
     {
       title: "What does a Digital Marketer do?",
-      description: `Digital Marketing is many elements all working together to deliver on the marketing strategy.`
+      description: `A professional who promotes products or services using online platforms for achieve clients goal like Sales, Followers, Views, Website Traffic, etc.`
     },
     {
       title: `Why ${siteConfig.title}?`,
-      description: `Because we provide one of the best linkedin marketing services and advices available within the market with <i>pay as you go</i> model which helps to grow your business more productively.`
+      description: `OnBlockIt: LinkedIn success through tailored strategies, innovation, and security.`
     },
     {
       title: "How can I hire the team?",
@@ -192,8 +192,17 @@
       description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact.`
     },
     {
-      title: "What is your pricing model and what packages do you offer?",
-      description: `The package of services we offer you will be based explicitly on your needs. .`
+      title: "what is pricing model and what package do you offer for linkedin marketing?",
+      description: `
+      <ul class="list-disc">
+        ${prices
+          .map(
+            (plan) =>
+              `<li><strong class="text-foreground/80 capitalize">${plan.title} ($${plan.price}): </strong> ${plan.summary}</li>`
+          )
+          .join("")}
+      </ul>
+      `
     }
   ]} />
 
@@ -201,3 +210,6 @@
 <ContactUs />
 
 <Footer />
+
+<!-- <li><strong class="text-foreground/80">Advance ($100): </strong> Marketing And Lead Generation , Profile Build Increasing Connection</li>
+  <li><strong class="text-foreground/80">Premium ($1500): </strong> Marketing And Lead Generation , Profile Build Acquiring Connection From Expected Country & People</li> -->

@@ -32,4 +32,5 @@ export interface Price {
   callToAction?: CallToAction;
   hasRibbon?: boolean;
   ribbonTitle?: string;
+  summary: string;
 }

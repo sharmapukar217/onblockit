@@ -1,7 +1,7 @@
 import { env } from "$env/dynamic/private";
 import { fail, error } from "@sveltejs/kit";
 import { contatFormSchema } from "$lib/zod-schema.js";
-import { superValidate, setMessage } from "sveltekit-superforms/server";
+import { superValidate } from "sveltekit-superforms/server";
 
 const ZIPPYBOX_API_URL = "https://zippybox.hyperce.io/api/v1/subscribers";
 
@@ -30,13 +30,8 @@ export const actions = {
       credentials: "omit"
     });
 
-    if (response.ok) {
-      return setMessage(contactForm, "Your request has been processed successfully.");
-    } else {
-      return setMessage(contactForm, "Oops, Something went wrong.", {
-        status: 500
-      });
-    }
+    if (response.ok) return { contactForm };
+    return error(500);
   },
 
   /**
