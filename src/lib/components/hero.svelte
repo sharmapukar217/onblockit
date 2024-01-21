@@ -12,7 +12,7 @@
         <div
           class="text-3xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
           <h1 class="text-primary">{siteConfig.title}</h1>
-          <div class="inline-flex text-4xl md:text-5xl">
+          <div class="inline-flex text-2xl md:text-5xl">
             <h2 class="typing">{siteConfig.description}</h2>
           </div>
         </div>
