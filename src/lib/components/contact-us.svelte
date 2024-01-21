@@ -57,7 +57,7 @@
       {/if}
     </div>
 
-    <div class="md:flex space-y-2 md:space-y-0 md:space-x-2">
+    <div class="md:flex space-y-4 md:space-y-0 md:space-x-2">
       <div class="w-full">
         <label for="email">
           <span> Your email address </span>
