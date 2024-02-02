@@ -42,9 +42,9 @@ export const prices: Array<Price> = [
     price: 50,
     period: "per month",
     items: [
-      {
-        description: "Linkedin account creation"
-      },
+      // {
+      //   description: "Linkedin account creation"
+      // },
       {
         description: "Page setup & acount management"
       },
@@ -77,9 +77,9 @@ export const prices: Array<Price> = [
     price: 100,
     period: "Per Month",
     items: [
-      {
-        description: "Linkedin account creation"
-      },
+      // {
+      //   description: "Linkedin account creation"
+      // },
       {
         description: "Page setup & acount management"
       },
@@ -95,10 +95,10 @@ export const prices: Array<Price> = [
       {
         description: "Content creation with graphics"
       },
-      {
-        description: "Sales navigator &  cold emails",
-        icon: "icon-[flat-color-icons--cancel]"
-      },
+      // {
+      //   description: "Sales navigator &  cold emails",
+      //   icon: "icon-[flat-color-icons--cancel]"
+      // },
       {
         description: "Content video, sales",
         icon: "icon-[flat-color-icons--cancel]"
@@ -119,9 +119,9 @@ export const prices: Array<Price> = [
     price: 200,
     period: "Per Month",
     items: [
-      {
-        description: "Linkedin account creation"
-      },
+      // {
+      //   description: "Linkedin account creation"
+      // },
       {
         description: "Page setup & acount management"
       },
@@ -137,9 +137,9 @@ export const prices: Array<Price> = [
       {
         description: "Content creation with graphics"
       },
-      {
-        description: "Sales navigator and cold emails"
-      },
+      // {
+      //   description: "Sales navigator and cold emails"
+      // },
       {
         description: "Content video, sales and much more..."
       }

@@ -36,3 +36,9 @@
     </div>
   </div>
 </section>
+
+<style>
+  section {
+    height: calc(100vh - 76px);
+  }
+</style>

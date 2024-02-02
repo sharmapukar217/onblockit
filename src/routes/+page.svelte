@@ -232,7 +232,7 @@
     //   description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact.`
     // },
     {
-      title: "what is pricing model and what package do you offer for linkedin marketing?",
+      title: "What is pricing model and what package do you offer for linkedin marketing?",
       description: `
       <ul class="list-disc">
         ${prices
