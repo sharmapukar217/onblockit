@@ -175,22 +175,62 @@
 <!-- FAQs -->
 <Faq
   questions={[
-    {
-      title: "What does a Digital Marketer do?",
-      description: `A professional who promotes products or services using online platforms for achieve clients goal like Sales, Followers, Views, Website Traffic, etc.`
-    },
+    // {
+    //   title: "What does a Digital Marketer do?",
+    //   description: `A professional who promotes products or services using online platforms for achieve clients goal like Sales, Followers, Views, Website Traffic, etc.`
+    // },
     {
       title: `Why ${siteConfig.title}?`,
       description: `OnBlockIt: LinkedIn success through tailored strategies, innovation, and security.`
     },
     {
-      title: "How can I hire the team?",
-      description: `You can use our <a href="#contact-us" class="text-primary hover:underline">contact form</a> or contact us directly using the contact details which you can find on <a href="#footer" class="font-semibold hover:underline">footer</a> section.`
+      title: `What services does your agency provide?`,
+      description: `We specialize in optimizing LinkedIn profiles, content creation, and targeted campaigns to boost your professional brand and generate leads.`
     },
     {
-      title: "What is it like working with us?",
-      description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact.`
+      title: `How can LinkedIn marketing benefit my business?`,
+      description: `LinkedIn marketing enhances brand visibility, builds professional relationships, and generates quality leads, ultimately driving business growth.`
     },
+    {
+      title: `Do I need a personal or company LinkedIn profile for marketing services?`,
+      description: `We can work with both personal and company profiles, tailoring strategies to suit your specific business goals.`
+    },
+    {
+      title: `How do you target the right audience on LinkedIn?`,
+      description: `We use advanced targeting strategies, including demographics, industry-specific parameters, and job titles, to ensure your content reaches the most relevant audience.`
+    },
+    {
+      title: `What sets your agency apart from others in the market?`,
+      description: `Our agency focuses exclusively on LinkedIn, combining industry expertise with creative strategies to deliver effective and results-driven marketing campaigns.`
+    },
+    {
+      title: `Can you provide examples of successful LinkedIn campaigns you've run?`,
+      description: `Absolutely! We have a portfolio of successful campaigns showcasing increased engagement, profile views, and lead generation for our clients.`
+    },
+    {
+      title: `How long does it take to see results from LinkedIn marketing efforts?`,
+      description: `Results vary, but many clients experience noticeable improvements within the first few weeks. Long-term success depends on consistent strategy implementation.`
+    },
+    {
+      title: `Is LinkedIn marketing suitable for small businesses?`,
+      description: `Yes, LinkedIn marketing can be tailored to suit businesses of all sizes. We customize our approach to meet the unique needs and goals of each client.`
+    },
+    {
+      title: `What type of content do you create for LinkedIn marketing?`,
+      description: `We create a variety of content, including engaging posts, articles, and visual media, strategically crafted to resonate with your target audience and showcase your expertise.`
+    },
+    {
+      title: `How do you measure the success of a LinkedIn marketing campaign?`,
+      description: `We use key performance indicators (KPIs) such as engagement rates, profile views, and lead generation metrics to assess the effectiveness of our campaigns.`
+    },
+    // {
+    //   title: "How can I hire the team?",
+    //   description: `You can use our <a href="#contact-us" class="text-primary hover:underline">contact form</a> or contact us directly using the contact details which you can find on <a href="#footer" class="font-semibold hover:underline">footer</a> section.`
+    // },
+    // {
+    //   title: "What is it like working with us?",
+    //   description: `Enjoyable and engaging! Once the terms of our engagement have been defined, you will be assigned a single point-of-contact.`
+    // },
     {
       title: "what is pricing model and what package do you offer for linkedin marketing?",
       description: `

@@ -28,11 +28,11 @@
         <SubscriptionForm />
       </div>
 
-      <div class="max-w-3xl mx-auto">
+      <!-- <div class="max-w-3xl mx-auto">
         <enhanced:img
           src="$lib/assets/images/hero-astronaut.webp"
           alt="an astronaut floating in the space" />
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
