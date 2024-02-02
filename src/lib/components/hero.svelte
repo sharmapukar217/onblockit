@@ -3,7 +3,7 @@
   import SubscriptionForm from "./subscription-form.svelte";
 </script>
 
-<section id="hero" class="relative md:-mt-[76px] not-prose text-balance">
+<section id="hero" class="relative md:-mt-[76px] not-prose text-balance min-h-s">
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
@@ -36,9 +36,3 @@
     </div>
   </div>
 </section>
-
-<style>
-  section {
-    height: calc(100vh - 76px);
-  }
-</style>
