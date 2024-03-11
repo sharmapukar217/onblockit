@@ -3,6 +3,11 @@
   import { twMerge } from "tailwind-merge";
   import Headline from "./headline.svelte";
   import Section from "./section.svelte";
+  import { DropdownMenu } from "bits-ui";
+  import * as Drawer from "$lib/components/drawer";
+  import * as Dialog from "$lib/components/dialog";
+
+  let open = false;
 </script>
 
 <Section id="pricing" class="bg-muted/60">
@@ -60,22 +65,45 @@
                 {/if}
               </div>
               {#if callToAction}
-                <div class={`flex justify-center`}>
-                  {#if typeof callToAction === "string"}
-                    {callToAction}
-                  {:else if callToAction && callToAction.href}
-                    <a
-                      {...callToAction}
-                      class={twMerge(
-                        `w-full rounded-full h-12
-                        flex items-center justify-center font-medium border`,
-                        hasRibbon
-                          ? "bg-primary text-primary-foreground hover:bg-primary/85"
-                          : "bg-muted text-foreground hover:bg-muted/85"
-                      )}>
-                    </a>
-                  {/if}
-                </div>
+                <DropdownMenu.Root>
+                  <DropdownMenu.Trigger
+                    class={twMerge(
+                      `group relative w-full rounded-lg h-11
+                      flex items-center justify-center font-medium border`,
+                      hasRibbon
+                        ? "bg-primary text-primary-foreground hover:bg-primary/85"
+                        : "bg-muted text-foreground hover:bg-muted/85"
+                    )}>
+                    Get Started
+
+                    <div
+                      class="icon-[bi--chevron-down] w-3 h-3 text-foreground absolute right-4 group-data-[state=open]:rotate-[180deg] transition-transform" />
+                  </DropdownMenu.Trigger>
+                  <DropdownMenu.Content
+                    class="bg-muted my-2 w-[16.5rem] rounded-lg p-2 shadow-md focus:outline-none space-y-0.5">
+                    <DropdownMenu.Item asChild let:builder>
+                      <a
+                        {...builder}
+                        use:builder.action
+                        href="https://stripe_link"
+                        class="inline-flex items-center w-full text-muted-foreground cursor-pointer px-2 py-2 rounded-lg data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground">
+                        <i class="icon-[bi--credit-card] w-4 h-4 me-3" />
+                        <span class="font-medium md:font-semibold text-sm"> Pay with card </span>
+                      </a>
+                    </DropdownMenu.Item>
+
+                    <DropdownMenu.Item
+                      on:click={() => {
+                        open = !open;
+                      }}
+                      class="inline-flex items-center w-full text-muted-foreground cursor-pointer px-2 py-2 rounded-lg data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground">
+                      <i class="icon-[bi--headset] w-4 h-4 me-3" />
+                      <span class="font-medium md:font-semibold text-sm">
+                        Request for service
+                      </span>
+                    </DropdownMenu.Item>
+                  </DropdownMenu.Content>
+                </DropdownMenu.Root>
               {/if}
             </div>
           {/if}
@@ -84,3 +112,11 @@
     </div>
   </div>
 </Section>
+
+<Dialog.Root bind:open>
+  <Dialog.Content>
+    <Dialog.Header>
+      <Dialog.Title>Request for Service</Dialog.Title>
+    </Dialog.Header>
+  </Dialog.Content>
+</Dialog.Root>
