@@ -8,26 +8,26 @@ export const siteConfig = {
 };
 
 export const socialLinks: Array<SocialLink> = [
-  {
-    href: "",
-    name: "facebook",
-    icon: "icon-[logos--facebook]"
-  },
-  {
-    href: "",
-    name: "instagram",
-    icon: "icon-[skill-icons--instagram]"
-  },
-  {
-    href: "",
-    name: "twitter",
-    icon: "icon-[skill-icons--twitter]"
-  },
-  {
-    href: "",
-    name: "github",
-    icon: "icon-[skill-icons--github-light]"
-  },
+  // {
+  //   href: "",
+  //   name: "facebook",
+  //   icon: "icon-[logos--facebook]"
+  // },
+  // {
+  //   href: "",
+  //   name: "instagram",
+  //   icon: "icon-[skill-icons--instagram]"
+  // },
+  // {
+  //   href: "",
+  //   name: "twitter",
+  //   icon: "icon-[skill-icons--twitter]"
+  // },
+  // {
+  //   href: "",
+  //   name: "github",
+  //   icon: "icon-[skill-icons--github-light]"
+  // },
   {
     href: "",
     name: "linkedin",
@@ -39,7 +39,7 @@ export const prices: Array<Price> = [
   {
     title: "basic",
     subtitle: "Optimal choice for personal use",
-    price: 50,
+    price: 300,
     period: "per month",
     items: [
       // {
@@ -64,17 +64,12 @@ export const prices: Array<Price> = [
         icon: "icon-[flat-color-icons--cancel]"
       }
     ],
-    callToAction: {
-      target: "_blank",
-      text: "Get started",
-      href: "#section-pricing"
-    },
     summary: "Marketing And Lead Generation, Increasing Your Product Sales and Popularity"
   },
   {
     title: "advance",
     subtitle: "Optimal choice for small teams",
-    price: 100,
+    price: 500,
     period: "Per Month",
     items: [
       // {
@@ -104,11 +99,6 @@ export const prices: Array<Price> = [
         icon: "icon-[flat-color-icons--cancel]"
       }
     ],
-    callToAction: {
-      target: "_blank",
-      text: "Get started",
-      href: "#section-pricing"
-    },
     hasRibbon: true,
     ribbonTitle: "popular",
     summary: "Marketing And Lead Generation , Profile Build Increasing Connection"
@@ -116,7 +106,7 @@ export const prices: Array<Price> = [
   {
     title: "premium",
     subtitle: "Optimal choice for companies",
-    price: 200,
+    price: 1000,
     period: "Per Month",
     items: [
       // {
@@ -144,11 +134,6 @@ export const prices: Array<Price> = [
         description: "Content video, sales and much more..."
       }
     ],
-    callToAction: {
-      target: "_blank",
-      text: "Get started",
-      href: "#section-pricing"
-    },
     summary: `Marketing And Lead Generation , Profile Build Acquiring Connection From Expected Country & People`
   }
 ];

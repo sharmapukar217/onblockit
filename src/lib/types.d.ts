@@ -23,7 +23,7 @@ export interface ItemGrid {
 }
 
 export interface Price {
-  title?: string;
+  title: string;
   subtitle?: string;
   description?: string;
   price?: number;

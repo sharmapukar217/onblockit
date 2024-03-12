@@ -28,7 +28,7 @@
     "clsx": "^2.1.0",
     "rss": "^1.2.2",
     "svelte-french-toast": "^1.2.0",
-    "sveltekit-superforms": "^1.13.0",
+    "sveltekit-superforms": "^2.9.0",
     "tailwind-merge": "^2.2.0",
     "vaul-svelte": "^0.2.4",
     "workbox-window": "^7.0.0",

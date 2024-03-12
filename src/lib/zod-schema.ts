@@ -2,6 +2,8 @@ import { z } from "zod";
 
 const NAME_REQUIRED_MESSAGE = "Please enter your full name.";
 
+const WHATSAPP_NUMBER_REQUIRED_MESSAGE = "Please enter your whatsapp number.";
+
 const EMAIL_REQUIRED_MESSAGE = "Please enter your email addess.";
 const EMAIL_INVALID_MESSAGE = "Please enter a valid email address.";
 
@@ -28,4 +30,23 @@ export const contatFormSchema = z.object({
     .string({ required_error: MESSAGE_REQUIRED_MESSAGE })
     .trim()
     .min(1, MESSAGE_REQUIRED_MESSAGE)
+});
+
+export const pricingFormSchema = z.object({
+  planType: z.string(),
+  fullName: z
+    .string({
+      required_error: NAME_REQUIRED_MESSAGE
+    })
+    .min(1, NAME_REQUIRED_MESSAGE),
+  emailAddress: z
+    .string({ required_error: EMAIL_REQUIRED_MESSAGE })
+    .email({ message: EMAIL_INVALID_MESSAGE })
+    .min(1, EMAIL_REQUIRED_MESSAGE),
+  whatsappNumber: z
+    .string({
+      required_error: WHATSAPP_NUMBER_REQUIRED_MESSAGE
+    })
+    .min(1, WHATSAPP_NUMBER_REQUIRED_MESSAGE),
+  message: z.string().trim().optional()
 });

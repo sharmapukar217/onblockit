@@ -4,14 +4,14 @@
   //   components
   import Section from "./section.svelte";
   import Headline from "./headline.svelte";
+  import { toast } from "svelte-french-toast";
   import { contatFormSchema } from "$lib/zod-schema";
+  import { zod } from "sveltekit-superforms/adapters";
   import { superForm } from "sveltekit-superforms/client";
-  import toast from "svelte-french-toast";
 
-  const { form, errors, enhance, submitting } = superForm($page.data?.contactFom, {
+  const { form, errors, enhance, submitting } = superForm($page.data?.contactFom ?? {}, {
     resetForm: true,
-    taintedMessage: undefined,
-    validators: contatFormSchema,
+    validators: zod(contatFormSchema),
     onResult({ result }) {
       if (result.type === "success") {
         toast.success("Your query has been submitted. We'd contact you shortly.", {

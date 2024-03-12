@@ -1,7 +1,8 @@
 import { env } from "$env/dynamic/private";
 import { fail, error } from "@sveltejs/kit";
-import { contatFormSchema } from "$lib/zod-schema.js";
+import { contatFormSchema, pricingFormSchema } from "$lib/zod-schema.js";
 import { superValidate } from "sveltekit-superforms/server";
+import { zod } from "sveltekit-superforms/adapters";
 
 const ZIPPYBOX_API_URL = "https://zippybox.hyperce.io/api/v1/subscribers";
 
@@ -11,7 +12,7 @@ export const actions = {
    * @param event
    */
   async contactForm(event) {
-    const contactForm = await superValidate(event, contatFormSchema);
+    const contactForm = await superValidate(event, zod(contatFormSchema));
     if (!contactForm.valid) return fail(400, { contactForm });
 
     const response = await fetch("https://admin.hyperce.io/shop-api", {
@@ -32,6 +33,21 @@ export const actions = {
 
     if (response.ok) return { contactForm };
     return error(500);
+  },
+
+  /**
+   * POST request for pricing form submission
+   * @param event
+   */
+  async pricingForm(event) {
+    const pricingForm = await superValidate(event, zod(pricingFormSchema));
+    if (!pricingForm.valid) return fail(400, { pricingForm });
+
+    // TODO: handle form request
+
+    return { pricingForm };
+    // if (response.ok) return { pricingForm };
+    // return error(500);
   },
 
   /**
