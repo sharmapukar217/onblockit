@@ -83,6 +83,8 @@
           <small> (Optional) </small>
         </label>
         <input
+          id="phone"
+          name="phone"
           type="text"
           maxlength={15}
           placeholder="(XXX) XXX-XXXX"
