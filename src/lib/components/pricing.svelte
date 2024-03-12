@@ -42,7 +42,7 @@
 
   <div class="flex items-stretch justify-center">
     <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-      {#each prices as { title, subtitle, price, period, items, callToAction, hasRibbon = false, ribbonTitle }}
+      {#each prices as { title, subtitle, price, period, items, hasRibbon = false, ribbonTitle }}
         <div class="col-span-3 mx-auto flex w-full sm:col-span-1">
           {#if price && period}
             <div
@@ -178,7 +178,7 @@
             class="mt-0.5"
             aria-invalid={$errors.fullName ? true : undefined}
             bind:value={$form.fullName}
-            placeholder="i.e: John Doe"
+            placeholder="i.e: Your Full Name"
             required />
           {#if $errors.fullName}
             <small class="text-sm font-semibold text-destructive">{$errors.fullName}</small>
@@ -194,7 +194,7 @@
             class="mt-0.5"
             aria-invalid={$errors.emailAddress ? true : undefined}
             bind:value={$form.emailAddress}
-            placeholder="i.e: johndoe@gmail.com"
+            placeholder="i.e: hi@gmail.com"
             required />
           {#if $errors.emailAddress}
             <small class="text-sm font-semibold text-destructive">{$errors.emailAddress}</small>
@@ -225,6 +225,7 @@
             id="message"
             class="mt-0.5"
             rows={3}
+            placeholder="i.e: Your Message (optional)"
             aria-invalid={$errors.message ? true : undefined}
             bind:value={$form.message} />
           {#if $errors.message}
