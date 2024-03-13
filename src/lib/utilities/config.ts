@@ -215,6 +215,10 @@ export const prices: Array<Price> = [
         available: true
       },
       {
+        description: "LinkedIn Recruiter",
+        available: true
+      },
+      {
         description: "Advanced Analytics",
         available: true
       },

@@ -179,7 +179,8 @@
       </span>
       <a href="/" class="hover:underline hover:text-foreground">{siteConfig.title}™</a>
       <span> | All Rights Reserved. </span>
-      <span class="block">Made with ❤️ by Hyperce</span>
+      <span class="block"
+        >Made with ❤️ by <a href="https://hyperce.io" class="hover:underline">Hyperce</a></span>
     </div>
   </div>
 </footer>

@@ -82,6 +82,8 @@
                     <span class="text-6xl font-extrabold">{price}</span>
                   </div>
                   <span class="text-base leading-6 lowercase text-foreground">{period}</span>
+                  <span class="block text-sm font-medium leading-6 lowercase text-muted-foreground"
+                    >Excluding linkedin subscrption....</span>
                 </div>
                 {#if items}
                   <ul role="list" class="my-8 md:my-10 space-y-2 text-left">
@@ -146,7 +148,9 @@
         </div>
       {/each}
 
-      <div class="col-span-3 mx-auto flex w-full md:col-span-1">
+      <div class="hidden lg:block"></div>
+
+      <div class="col-span-3 mx-auto flex w-full sm:col-span-1">
         <div
           class="rounded-lg backdrop-blur border bg-background px-6 py-8 flex w-full max-w-sm flex-col justify-between text-center relative">
           <button
