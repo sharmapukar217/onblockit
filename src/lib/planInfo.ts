@@ -210,7 +210,7 @@ export const planInfo = {
   Custom: {
     details: [
       {
-        title: "Custom",
+        title: "Select what you want, pay for what you need...",
         information: [
           "Customized based on all of the strategies, plans and goals from the client",
           "Cost is mutually discussed and decided based on the requirements",
