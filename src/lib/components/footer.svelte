@@ -4,44 +4,6 @@
   import SubscriptionForm from "./subscription-form.svelte";
 </script>
 
-<!-- <footer id="footer" class="text-center bg-background rounded-lg shadow p-4">
-  <div class="w-full mx-auto max-w-screen-xl">
-    <ul class="inline-flex mt-3 text-sm font-medium text-muted-foreground sm:mt-0">
-      <li>
-        <a href="/" class="hover:underline me-4 md:me-6 hover:text-foreground">Home</a>
-      </li>
-      <li>
-        <a href="/" class="hover:underline me-4 md:me-6 hover:text-foreground">About</a>
-      </li>
-      <li>
-        <a href="/" class="hover:underline me-4 md:me-6 hover:text-foreground">Privacy Policy</a>
-      </li>
-      <li>
-        <a href="/" class="hover:underline me-4 md:me-6 hover:text-foreground">Licensing</a>
-      </li>
-      <li>
-        <a href="/" class="hover:underline me-4 md:me-6 hover:text-foreground">Contact us</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="inline-flex justify-center text-sm text-muted-foreground mt-4 space-x-2">
-    <span>
-      &copy; {new Date().getFullYear()}
-    </span>
-    <a href="/" class="hover:underline hover:text-foreground">{siteConfig.title}™</a>
-    <span> | All Rights Reserved. </span>
-    <span class="block text-start">Made with ❤️ by Hyperce</span>
-  </div>
-</footer> -->
-
-<!--
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
--->
-
 <footer id="footer" class="bg-background border-t">
   <div class="mx-auto max-w-screen-xl px-4 pb-4 pt-16 sm:px-6 md:px-8">
     <div class="mx-auto max-w-md space-y-3">

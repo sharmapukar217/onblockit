@@ -37,103 +37,206 @@ export const socialLinks: Array<SocialLink> = [
 
 export const prices: Array<Price> = [
   {
-    title: "basic",
-    subtitle: "Optimal choice for personal use",
+    title: "Boost",
+    subtitle: "Optimal choice for personal branding",
     price: 300,
     period: "per month",
     items: [
-      // {
-      //   description: "Linkedin account creation"
-      // },
       {
-        description: "Page setup & acount management"
+        description: "Profile Creation & Optimization",
+        available: true
       },
       {
-        description: "Other basic things"
+        description: "Connection Strategy",
+        available: true
       },
       {
-        description: "Linkedin marketing",
-        icon: "icon-[flat-color-icons--cancel]"
+        description: "Content Engagement",
+        available: true
       },
       {
-        description: "Lead generation",
-        icon: "icon-[flat-color-icons--cancel]"
+        description: "Thought Leadership Engagement",
+        available: true
       },
       {
-        description: "Content creation with graphics",
-        icon: "icon-[flat-color-icons--cancel]"
+        description: "Monthly Performance Report",
+        available: true
+      },
+      {
+        description: "Bi-Weekly Strategy Calls",
+        available: false
+      },
+      {
+        description: "Content Creation",
+        available: false
+      },
+      {
+        description: "Lead Generation",
+        available: false
+      },
+      {
+        description: "LinkedIn Advertising",
+        available: false
+      },
+      {
+        description: "LinkedIn Recruiter",
+        available: false
+      },
+      {
+        description: "Advanced Analytics",
+        available: false
+      },
+      {
+        description: "Premium Content Package",
+        available: false
+      },
+      {
+        description: "VIP Support",
+        available: false
+      },
+      {
+        description: "LinkedIn Sales Navigator Strategy",
+        available: false
       }
     ],
-    summary: "Marketing And Lead Generation, Increasing Your Product Sales and Popularity"
+    summary:
+      "Enhance Your Personal Branding Efforts, Connect with Your Audience, and Measure Performance",
+    stripeUrl: "https://buy.stripe.com/28o6oSaZu9uq8YE8wB"
   },
   {
-    title: "advance",
-    subtitle: "Optimal choice for small teams",
+    title: "Accelerator",
+    subtitle: "Optimal choice for small and medium businesses",
     price: 500,
-    period: "Per Month",
+    period: "per month",
     items: [
-      // {
-      //   description: "Linkedin account creation"
-      // },
       {
-        description: "Page setup & acount management"
+        description: "Profile Creation & Optimization",
+        available: true
       },
       {
-        description: "Other basic things"
+        description: "Connection Strategy",
+        available: true
       },
       {
-        description: "Linkedin marketing"
+        description: "Content Engagement",
+        available: true
       },
       {
-        description: "Lead generation"
+        description: "Thought Leadership Engagement",
+        available: true
       },
       {
-        description: "Content creation with graphics"
+        description: "Monthly Performance Report",
+        available: true
       },
-      // {
-      //   description: "Sales navigator &  cold emails",
-      //   icon: "icon-[flat-color-icons--cancel]"
-      // },
       {
-        description: "Content video, sales",
-        icon: "icon-[flat-color-icons--cancel]"
+        description: "Bi-Weekly Strategy Calls",
+        available: true
+      },
+      {
+        description: "Content Creation",
+        available: true
+      },
+      {
+        description: "Lead Generation",
+        available: true
+      },
+      {
+        description: "LinkedIn Advertising",
+        available: true
+      },
+      {
+        description: "LinkedIn Recruiter",
+        available: true
+      },
+      {
+        description: "Advanced Analytics",
+        available: false
+      },
+      {
+        description: "Premium Content Package",
+        available: false
+      },
+      {
+        description: "VIP Support",
+        available: false
+      },
+      {
+        description: "LinkedIn Sales Navigator Strategy",
+        available: false
       }
     ],
+    summary:
+      "Comprehensive Solution for Small and Medium Businesses, Drive Growth through Marketing and Recruitment Efforts",
+    stripeUrl: "https://buy.stripe.com/eVa8x05FabCy7UA14a",
     hasRibbon: true,
-    ribbonTitle: "popular",
-    summary: "Marketing And Lead Generation , Profile Build Increasing Connection"
+    ribbonTitle: "popular"
   },
   {
-    title: "premium",
-    subtitle: "Optimal choice for companies",
+    title: "Mastery",
+    subtitle: "Optimal choice for growing and large businesses",
     price: 1000,
-    period: "Per Month",
+    period: "per month",
     items: [
-      // {
-      //   description: "Linkedin account creation"
-      // },
       {
-        description: "Page setup & acount management"
+        description: "Profile Creation & Optimization",
+        available: true
       },
       {
-        description: "Other basic things"
+        description: "Connection Strategy",
+        available: true
       },
       {
-        description: "Linkedin marketing"
+        description: "Content Engagement",
+        available: true
       },
       {
-        description: "Lead generation"
+        description: "Thought Leadership Engagement",
+        available: true
       },
       {
-        description: "Content creation with graphics"
+        description: "Monthly Performance Report",
+        available: true
       },
-      // {
-      //   description: "Sales navigator and cold emails"
-      // },
       {
-        description: "Content video, sales and much more..."
+        description: "Bi-Weekly Strategy Calls",
+        available: true
+      },
+      {
+        description: "Content Creation",
+        available: true
+      },
+      {
+        description: "Lead Generation",
+        available: true
+      },
+      {
+        description: "LinkedIn Advertising",
+        available: true
+      },
+      {
+        description: "Advanced Analytics",
+        available: true
+      },
+      {
+        description: "Premium Content Package",
+        available: true
+      },
+      {
+        description: "VIP Support",
+        available: true
+      },
+      {
+        description: "LinkedIn Recruiter",
+        available: true
+      },
+      {
+        description: "LinkedIn Sales Navigator Strategy",
+        available: true
       }
     ],
-    summary: `Marketing And Lead Generation , Profile Build Acquiring Connection From Expected Country & People`
+    summary:
+      "Tailored Solutions for Growing and Large Businesses, Drive Growth through Comprehensive Marketing and Recruitment Efforts",
+    stripeUrl: "https://buy.stripe.com/aEU00uc3y7mi7UA7sz"
   }
 ];

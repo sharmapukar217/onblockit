@@ -53,5 +53,5 @@ export default {
     })
     // }
   },
-  plugins: [addDynamicIconSelectors({ scale: 0 })]
+  plugins: [require("@tailwindcss/typography"), addDynamicIconSelectors({ scale: 0 })]
 };

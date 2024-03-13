@@ -28,9 +28,10 @@ export interface Price {
   description?: string;
   price?: number;
   period?: string;
-  items?: Array<Item>;
+  items?: Array<{ description: string; available: boolean }>;
   callToAction?: CallToAction;
   hasRibbon?: boolean;
   ribbonTitle?: string;
   summary: string;
+  stripeUrl: string;
 }
