@@ -44,10 +44,27 @@ export const actions = {
     if (!pricingForm.valid) return fail(400, { pricingForm });
 
     // TODO: handle form request
+    const response = await fetch("https://admin.hyperce.io/shop-api", {
+      headers: {
+        "content-type": "application/json"
+      },
+      referrerPolicy: "strict-origin-when-cross-origin",
+      body: JSON.stringify({
+        variables: { ...pricingForm.data },
+        operationName: "addContactFromBlock",
+        query: `mutation addContactFromBlock($fullName: String!, $emailAddress: String!, $whatsappNumber: String!, $planType: String!, $message: String) {
+            addContactFromBlock(input:{ fullName:$fullName, email:$emailAddress, phone:$whatsappNumber, plan:$planType, message: $message}){ id }
+          }`
+      }),
+      mode: "cors",
+      method: "POST",
+      credentials: "omit"
+    });
 
-    return { pricingForm };
-    // if (response.ok) return { pricingForm };
-    // return error(500);
+    console.log(await response.json());
+
+    if (response.ok) return { pricingForm };
+    return error(500);
   },
 
   /**
