@@ -33,7 +33,7 @@ export const contatFormSchema = z.object({
 });
 
 export const pricingFormSchema = z.object({
-  planType: z.string(),
+  plan: z.string(),
   fullName: z
     .string({
       required_error: NAME_REQUIRED_MESSAGE

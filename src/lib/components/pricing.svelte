@@ -134,7 +134,7 @@
                   <DropdownMenu.Item
                     on:click={() => {
                       formModalOpened = true;
-                      $form.planType = title;
+                      $form.plan = title;
                       selectedPrice = { title, subtitle, price, period, hasRibbon, ribbonTitle };
                     }}
                     class="inline-flex items-center w-full text-muted-foreground cursor-pointer px-2 py-2 rounded-lg data-[highlighted]:bg-primary data-[highlighted]:text-primary-foreground">
@@ -177,7 +177,7 @@
             <button
               on:click={() => {
                 formModalOpened = true;
-                $form.planType = "Custom";
+                $form.plan = "Custom";
                 selectedPrice = { title: "Custom", hasRibbon: true, ribbonTitle: "custom" };
               }}
               class="relative w-full rounded-lg h-11 flex items-center justify-center font-medium border bg-primary text-primary-foreground hover:bg-primary/85">
@@ -196,7 +196,7 @@
     bind:open={formModalOpened}
     onOpenChange={function (opened) {
       if (!opened) {
-        $form.planType = undefined;
+        $form.plan = undefined;
         selectedPrice = undefined;
       }
     }}>
@@ -208,7 +208,7 @@
       <form action="/?/pricingForm" method="post" class="space-y-4" autocomplete="off" use:enhance>
         <div class="relative">
           <span class="text-sm font-medium md:font-semibold text-muted-foreground">Plan</span>
-          <input type="hidden" name="planType" bind:value={$form.planType} required />
+          <input type="hidden" name="plan" bind:value={$form.plan} required />
           <div
             class="w-full h-10 rounded-lg bg-muted text-muted-foreground cursor-not-allowed flex items-center px-3 text-sm font-medium md:font-semibold capitalize">
             {selectedPrice.title} Plan
@@ -316,7 +316,7 @@
     bind:open={infoModalOpened}
     onOpenChange={function (opened) {
       if (!opened) {
-        $form.planType = undefined;
+        $form.plan = undefined;
         selectedPlan = undefined;
       }
     }}>
