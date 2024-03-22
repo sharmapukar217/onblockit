@@ -43,6 +43,8 @@ export const actions = {
     const pricingForm = await superValidate(event, zod(pricingFormSchema));
     if (!pricingForm.valid) return fail(400, { pricingForm });
 
+    console.log(pricingForm.data);
+
     // TODO: handle form request
     const response = await fetch("https://admin.hyperce.io/shop-api", {
       headers: {
@@ -52,7 +54,7 @@ export const actions = {
       body: JSON.stringify({
         variables: { ...pricingForm.data },
         operationName: "addContactFromBlock",
-        query: `mutation addContactFromBlock($fullName: String!, $emailAddress: String!, $whatsappNumber: String!, $planType: String!, $message: String) {
+        query: `mutation addContactFromBlock($fullName: String!, $emailAddress: String!, $whatsappNumber: String!, $planType: Plan!, $message: String) {
             addContactFromBlock(input:{ fullName:$fullName, email:$emailAddress, phone:$whatsappNumber, plan:$planType, message: $message}){ id }
           }`
       }),
