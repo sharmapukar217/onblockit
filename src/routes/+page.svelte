@@ -46,7 +46,7 @@
   <!-- Common OG Tags -->
   <meta property="og:title" content={siteConfig.title} />
   <meta property="og:description" content={siteConfig.description} />
-  <meta property="og:image" content="/favicon.ico" />
+  <meta property="og:image" content="/icons/icon-512x512.png" />
 </svelte:head>
 
 <!-- toasters and rest -->
