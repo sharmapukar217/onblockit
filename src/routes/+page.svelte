@@ -42,6 +42,8 @@
 <svelte:head>
   <title>{siteConfig.title}-{siteConfig.description}</title>
   <meta name="description" content={siteConfig.description} />
+  <meta property="image" content="/icons/icon-512x512.png" />
+
 
   <!-- Common OG Tags -->
   <meta property="og:title" content={siteConfig.title} />
